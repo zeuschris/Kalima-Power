@@ -107,20 +107,6 @@ ion-icon:hover{
     z-index:  1;
 }
 
-/* HEADER ITMES */
-.header .kalima_logo{
-    width: 150px;
-    border-radius: 50px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    float: right;
-    cursor: pointer;
-    animation: logo_efecto 5s infinite ease-out;
-    transition: box-shadow .5s;
-}
-
 /* Logo-Efecto */
 .kalima_logo:hover{
     box-shadow: 0px 0px 10px 3px rgb(97, 5, 5);
@@ -850,22 +836,6 @@ table tr:nth-child(even){
 ::selection{
     background-color: #211510;
     color: #fff;
-}
-
-/* Keyframes */
-
-@keyframes logo_efecto{
-    0%{
-        box-shadow: 0 0 5px black;
-    }
-
-    50%{
-        box-shadow: 1px 1px 5px orange, 0 0 5px orange;
-    }
-
-    100%{
-        box-shadow: 0 0 5px black;
-    }
 }
 
 /* Responsive */
