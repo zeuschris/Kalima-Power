@@ -780,6 +780,13 @@ table tr:nth-child(even){
     text-shadow: 0 0 5px black;
 }
 
+.alert-primary{
+    width: 15%;
+    text-align: center;
+    font-size: 40px;
+    opacity: .8;
+}
+
 /* SECCION MONSTERS */
 
 /* Contenedor de monsters */
@@ -921,7 +928,7 @@ table tr:nth-child(even){
         width: 100%;
         text-transform: lowercase;
     }
-    .title_personaje {
+    .title_personaje{
         color: #00aeff;
         font-size: 45px;
         text-transform: uppercase;
