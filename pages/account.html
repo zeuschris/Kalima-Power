@@ -8,7 +8,9 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>	
     <!--Icono-->
-    <link href="imagenes/Swords.ico" rel="shortcut icon">
+    <link href="../imagenes/Swords.ico" rel="shortcut icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Hoja de estilos --> 
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/animaciones.css">
@@ -47,45 +49,45 @@
                     <div class="title_create_account">   
                         <h3>Create New Account</h3>
                     </div>
-                        <div class="formulario-cuenta-nombre">
-                            <label for="usuario">Nombre:</label>
-                            <input type="text" name="usuario" id="usuario" minlength="7" maxlength="12" required placeholder="Account Id" autocomplete="off"><br> <br>
+                        <div class="formulario-cuenta-nombre form-group row">
+                            <label for="usuario" class="col-sm-2 col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" name="usuario" id="usuario" minlength="7" maxlength="12" required placeholder="Account Id" autocomplete="off"><br> <br>
                         </div>
-                        <div class="formulario-cuenta-contraseña">
-                            <label for="password">Contraseña:</label>
-                            <input type="password" name="contraseña" id="password" minlength="9" maxlength="20" required placeholder="Password" autocomplete="off"> <br> <br>
+                        <div class="formulario-cuenta-contraseña form-group row">
+                            <label for="password" class="col-sm-2 col-form-label">Contraseña:</label>
+                            <input type="password" class="form-control" name="contraseña" id="password" minlength="9" maxlength="20" required placeholder="Password" autocomplete="off"> <br> <br>
                         </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" maxlength="25" required autocomplete="off"><br><br>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                            <input type="email" class="form-control" name="email" id="email" maxlength="25" required autocomplete="off"><br><br>
                         </div>
-                        <div class="formulario-cuenta-nombre">
-                            <label for="personaje">Nombre del personaje:</label>
-                            <input type="text" name="personaje" id="personaje" minlength="7" maxlength="12" required autocomplete="off"><br> <br><br>
+                        <div class="formulario-cuenta-nombre form-group row">
+                            <label for="personaje" class="col-sm-2 col-form-label">Nombre del personaje:</label>
+                            <input type="text" class="form-control" name="personaje" id="personaje" minlength="7" maxlength="12" required autocomplete="off"><br> <br><br>
                         </div>
                         <div class="container_sex">
                             <span>Sexo:</span>
-                            <input type="radio" name="sexo" id="hombre" value="Hombre">
-                            <label for="hombre">Hombre</label>
-                            <input type="radio" name="sexo" id="mujer" value="Mujer">
-                            <label for="mujer">Mujer</label>
+                            <input class="form-check-input" type="radio" name="sexo" id="hombre" value="Hombre">
+                            <label for="hombre" class="form-check-label">Hombre</label>
+                            <input type="radio" class="form-check-input" name="sexo" id="mujer" value="Mujer">
+                            <label for="mujer" class="form-check-label">Mujer</label>
                         </div>
                         <div class="container_verificacion"><br><br>
                             <div>Seleccione la siguiente casilla de verificación:</div>
-                            <label for="acepta">Acepta términos y condiciones</label> 
-                            <input id="acepta" type="checkbox" required name="acepta" value="1" /><br><br>
+                            <label for="acepta" class="form-check-label">Acepta términos y condiciones</label> 
+                            <input id="acepta" class="form-check-input" type="checkbox" required name="acepta" value="1" /><br><br>
                         </div>    
-                        <div class="container_vocacion">
+                        <div class="container_vocacion form-group row">
                             <label for="vocaciones">Vocacion:</label>
-                            <select name="vocaciones" required>
-                                <option value="" hidden>Selecciona una vocacion</option>
+                            <select class="form-select" aria-label="Default select example">
+                                <option hidden>Selecciona una Vocacion</option>
                                 <option value="1">Druid</option>
                                 <option value="2">Sorcerer</option>
                                 <option value="3">Paladin</option>
-                                <option value="4">Knight</option>
-                            </select>
+                                <option value="3">Knight</option>
+                              </select>
                             <div class="boton_cuenta">
-                                <br><br><br><br><br> <input type="submit" value="Crear Cuenta"/>
+                                <br><br><br><br><br> <input type="submit" class="btn btn-primary" value="Crear Cuenta"/>
                             </div>
                         </div>
             </div>
@@ -100,6 +102,7 @@
         </div>
     </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
 
