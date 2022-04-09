@@ -475,9 +475,30 @@ table tr:nth-child(even){
     border-bottom: 1px solid rgb(221, 204, 46);
     margin-bottom: 30px;
 }
-.updatings p::after{
-    content: url('../imagenes/Ascending_Ferumbras.gif');
-    vertical-align: middle;
+
+.updatings pre{
+    font-family: sans-serif;
+    background: black;
+    color:#fff;
+    text-shadow: 0 0 5px yellow;
+    border-radius: 20px;
+    border: 2px solid orange;
+    outline:1px solid white;
+    font-size: 25px;
+    display: flex;
+    font-weight: normal;
+    font-family: 'Friz Quadrata';
+    justify-content: center;
+    align-items:center;
+}
+
+.fenix{
+    position:absolute;
+    left: 210px;
+}
+
+.text-info{
+    color:white !important;
 }
 
 .alert-success{
@@ -1425,21 +1446,6 @@ table tr:nth-child(even){
     margin: 10px;
     border: none;
     font-family: 'Friz Quadrata';
-}
-
-@keyframes efecto_main {
-    0%{
-        color:#0f5132;
-    }
-    25%{
-        color:rgb(185, 18, 174);
-    }
-    50%{
-        color:rgb(35, 181, 164);
-    }
-    100%{
-        color:rgb(194, 26, 26);
-    }
 }
 
 
