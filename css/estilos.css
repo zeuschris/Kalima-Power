@@ -887,6 +887,9 @@ table tr:nth-child(even){
         width: 100%;
         display:grid;
     }
+    .parallax .account-login{
+        display: none;
+    }
     .inicio{
         display: none;
     }
@@ -1066,6 +1069,9 @@ table tr:nth-child(even){
         width: 100%;
         display:grid;
     }
+    .parallax .account-login{
+        display: none;
+    }
     .footer{
         display: grid;
         grid-area: FOOTER;
@@ -1163,7 +1169,7 @@ table tr:nth-child(even){
         width: 1000px;
     }
     .account-login{
-        display:block;
+        display:none;
     }
     .container_list p{
         text-align: justify;
@@ -1208,9 +1214,6 @@ table tr:nth-child(even){
         left: 112%;
         bottom: 220px;
         position: relative;
-    }
-    .account-login{
-        display: none;
     }
     .container_monsters{
         left: 19%;
