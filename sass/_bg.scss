@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Fondo de la pagina principal */
+    .background_main{
+        background: url(../imagenes/background/background.jpg) no-repeat fixed;
+        background-size: cover;
+        position:relative;
+    }
+    
+    /* Fondo de la seccion crear cuenta */
+    .background_account{
+        background:url(../imagenes/background/Background_Account.jpg) no-repeat fixed;
+        background-size: cover;
+        height: 1100px;
+        position:relative;
+    }
+    
+    /* Fondo de la seccion personajes */
+    .background_personajes{
+        background:url(https://s1.1zoom.me/b5050/867/327978-Sepik_1600x1200.jpg) no-repeat fixed;
+        background-size: cover;
+        position:relative;
+    }
+    
+    /* Fondo de la seccion mapas */
+    .background_mapas{
+        background:url(../imagenes/background/background_mapas.jpg) no-repeat fixed;
+        background-size: cover;
+        background-position-y:50px;
+        position:relative;
+    }
+    
+    /* Fondo de la seccion monsters */
+    .background_monsters{
+        background:url(https://bomdiatibia.com/download/fundo-summer.jpg) no-repeat fixed;
+        background-size: cover;
+        background-position-y: 53px;
+        position:relative;
+    }
+    
+    /* Fondo de la seccion outfits */
+    .background_outfits{
+        background:url(../imagenes/background/background_outfits.jpg) no-repeat fixed;
+        background-size: cover;
+        background-position-y: 40px;
+        position:relative;
+    }
+    
+    /* Fondo de la seccion iniciar sesión */
+    .background_login{
+        background:url(../imagenes/background/background_login.jpg) no-repeat fixed;
+        background-size: cover;
+        position:relative;
+        height: 1200px;
+    }

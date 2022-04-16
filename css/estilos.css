@@ -1,13 +1,181 @@
 @charset "UTF-8";
+/* Font Friz Quadrata */
+@font-face {
+  font-family: 'Friz Quadrata';
+  src: url(../fonts/friz-quadrata-regular-os-5870333951e7c.ttf); }
+
+/* Font Arial Narrow */
+@font-face {
+  font-family: 'Arial Narrow';
+  src: url(../fonts/Arial\Narrow.ttf); }
+
+/* Font SemplicitaPro-MedIt */
+@font-face {
+  font-family: 'SemplicitaPro-MedIt';
+  src: url(../fonts/SemplicitaPro-MedIt.otf); }
+
+.parallax {
+  background: #0b0d12;
+  list-style: none;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  border: 2px solid black;
+  user-select: none; }
+  .parallax li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px; }
+  .parallax a {
+    text-decoration: none;
+    color: #f8b700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    transition: color .2s; }
+    .parallax a:hover {
+      color: #fff; }
+  .parallax .account-login {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    border-radius: 12px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    bottom: -1px; }
+
+.footer {
+  grid-area: FOOTER;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .footer .contacto {
+    /* Contacto Email */
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #150c09;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    transition: all .2s; }
+    .footer .contacto:hover {
+      text-shadow: 0px 0px 5px;
+      text-decoration: underline; }
+  .footer .footer_redes {
+    font-family: "SemplicitaPro-MedIt";
+    background-color: #1e1714;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 20px;
+    border: 1px solid #312a27; }
+  .footer .copy_footer {
+    background-color: #150c09;
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-family: Helvetica,Arial,sans-serif; }
+
+/* Ionicons */
+ion-icon {
+  font-size: 25px;
+  color: #f8b700;
+  position: relative;
+  left: 20px;
+  margin: 10px; }
+  ion-icon:hover {
+    color: #fff; }
+
+.container_foto {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .container_foto p {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    color: #f8b700;
+    font-family: 'SemplicitaPro-MedIt';
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px #f8b700;
+    line-height: 1.5;
+    background-color: #150c09;
+    border: 1px solid #504137;
+    text-align: center;
+    font-size: 19.4px;
+    padding: 20px 0px; }
+  .container_foto .image_main {
+    position: relative;
+    width: 49%; }
+  .container_foto .kalima-image {
+    border: 1px solid #504137;
+    transition: all .2s;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #504137;
+    width: 100%;
+    height: 590px; }
+    .container_foto .kalima-image:hover {
+      outline: 1px solid #f8b700; }
+
+/* Fonts, Border, Altura, Anchura */
+table {
+  border: 1px solid #201f1f;
+  width: 100%;
+  height: 250px;
+  margin-top: 50px;
+  margin-bottom: 400px;
+  font-family: 'Arial Narrow'; }
+  table .table-style {
+    border-collapse: collapse; }
+  table .color_items {
+    color: #00358b; }
+  table .color_descripcion {
+    color: #3a3a3a; }
+  table th {
+    padding: 15px;
+    background: #6a322f;
+    color: #d1e9f3;
+    text-align: center; }
+  table tr td {
+    color: #010101;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+    text-align: left; }
+  table tr:nth-child(odd) {
+    background-color: #f2cda5; }
+  table tr:nth-child(even) {
+    background-color: #e7ad70; }
+  table .center {
+    text-align: center; }
+
+* {
+  box-sizing: border-box; }
+
 /* Fondo de la pagina principal */
 .background_main {
   background: url(../imagenes/background/background.jpg) no-repeat fixed;
   background-size: cover;
   position: relative; }
-
-/* Selector universal */
-* {
-  box-sizing: border-box; }
 
 /* Fondo de la seccion crear cuenta */
 .background_account {
@@ -50,32 +218,148 @@
   position: relative;
   height: 1200px; }
 
-/* Font Friz Quadrata */
-@font-face {
-  font-family: 'Friz Quadrata';
-  src: url(../fonts/friz-quadrata-regular-os-5870333951e7c.ttf); }
-
-/* Font Arial Narrow */
-@font-face {
-  font-family: 'Arial Narrow';
-  src: url(../fonts/Arial\Narrow.ttf); }
-
-/* Font SemplicitaPro-MedIt */
-@font-face {
-  font-family: 'SemplicitaPro-MedIt';
-  src: url(../fonts/SemplicitaPro-MedIt.otf); }
-
-/* Ionicons */
-ion-icon {
-  font-size: 25px;
+/* Titulo Principal */
+.title {
+  font-family: "Friz Quadrata";
+  font-size: 45px;
   color: #f8b700;
-  position: relative;
-  left: 20px;
-  margin: 10px; }
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 140px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding: 20px;
+  user-select: none;
+  /* Letra K */ }
+  .title h1::first-letter {
+    font-size: 170px;
+    font-family: "Friz Quadrata";
+    font-style: italic;
+    text-shadow: 3px 3px 5px #030303; }
 
-/* Ionicons Efecto */
-ion-icon:hover {
-  color: #fff; }
+/* Titulo de todas las secciones */
+.title_secciones {
+  font-family: "Friz Quadrata";
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px black, 0 0 5px black; }
+
+/* Titulo de la Tabla */
+.title_table {
+  color: #00aeff;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-left: 10px;
+  position: relative;
+  top: 40px; }
+
+/* Titulo de la seccion crear cuenta titulo (h3) */
+.title_create_account h3 {
+  color: #efd1a4;
+  font-size: 22px;
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-image: url(https://static.tibia.com/images/global/content/title-background-green.gif); }
+
+/* Titulo de personajes */
+.title_personaje {
+  color: #00aeff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: 'Friz Quadrata';
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 5px;
+  margin: 50px; }
+
+.druid {
+  position: relative; }
+  .druid h3 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Friz Quadrata';
+    text-shadow: 0 0 5px black;
+    transform: translate(-50%, -50%); }
+
+.sorcerer {
+  position: relative; }
+  .sorcerer h3 {
+    position: absolute;
+    top: 15%;
+    left: 73%;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Friz Quadrata';
+    text-shadow: 0 0 5px black;
+    transform: translate(-50%, -50%); }
+
+.paladin {
+  position: relative; }
+  .paladin h3 {
+    position: absolute;
+    bottom: 10%;
+    right: 61%;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Friz Quadrata';
+    text-shadow: 0 0 5px black; }
+
+.knight {
+  position: relative; }
+  .knight h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 65%;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Friz Quadrata';
+    text-shadow: 0 0 5px black; }
+
+/* Contenedor de monsters titulo h4 */
+.container_monsters h4 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Friz Quadrata';
+  color: #fff;
+  text-shadow: 0 0 5px;
+  text-decoration: underline #ecec18; }
+
+/* Subtitulo */
+.color_titles-main {
+  font-family: "Bellefair", serif;
+  color: #fff;
+  text-transform: uppercase;
+  list-style: none;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  position: relative;
+  right: 20px; }
+
+/* Color de subtitulos */
+h2, h3, h4, h5, h6 {
+  color: #ebdec2; }
 
 /* Grids */
 .grid-container {
@@ -93,73 +377,9 @@ ion-icon:hover {
 .kalima_logo:hover {
   box-shadow: 0px 0px 10px 3px #610505; }
 
-/* Titulo Principal */
-.title {
-  font-size: 45px;
-  color: #f8b700;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 140px;
-  font-family: 'Friz Quadrata';
-  letter-spacing: 5px;
-  font-weight: bold;
-  padding: 20px;
-  user-select: none; }
-
-/* Letra K */
-.title::first-letter {
-  font-size: 90px;
-  font-family: 'Friz Quadrata';
-  font-style: italic;
-  text-shadow: 3px 3px 5px #030303; }
-
-/* Titulo de todas las secciones */
-.title_secciones {
-  margin-bottom: 70px;
-  font-family: 'Friz Quadrata';
-  text-align: center;
-  font-size: 80px;
-  letter-spacing: 1px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 0 5px black, 0 0 5px black; }
-
 /* NAV */
 .nav {
   grid-area: NAV; }
-
-/* Menu */
-.parallax {
-  list-style: none;
-  position: fixed;
-  background: #0b0d12;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: 0;
-  border: 2px solid black;
-  user-select: none; }
-
-/* Menu Listas */
-.parallax li {
-  display: inline-block;
-  padding: 10px;
-  margin: 5px; }
-
-/* Menu Enlaces */
-.parallax a {
-  text-decoration: none;
-  color: #f7b10a;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  transition: color .2s; }
-
-/* Menu Efecto */
-.parallax a:hover {
-  color: #fff; }
 
 .btn-outline-danger {
   width: 100%;
@@ -167,224 +387,8 @@ ion-icon:hover {
   color: #27ebd7;
   text-shadow: 0 0 5px; }
 
-/* Menu-Iniciar Sesión */
-.parallax .account-login {
-  position: absolute;
-  top: -1px;
-  left: -2px;
-  border-radius: 12px;
-  padding: 20px;
-  color: #111;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: bolder;
-  bottom: -1px; }
-
-/* Color de subtitulos */
-h2, h3, h4, h5, h6 {
-  color: #ebdec2; }
-
-/* Subtitulo */
-.color_titles-main {
-  color: #fff;
-  text-transform: uppercase;
-  list-style: none;
-  font-weight: 700;
-  font-family: 'Bellefair', serif;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  position: relative;
-  right: 20px; }
-
-.container_foto div {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-left: 10px; }
-
-/* Contenedor de la imagen principal */
-.image_main {
-  position: relative;
-  width: 49%; }
-
-/* Contenido de la imagen principal de la pagina*/
-.image_main p {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  width: 100%;
-  color: #f8b700;
-  font-family: 'SemplicitaPro-MedIt';
-  font-weight: bolder;
-  text-shadow: 0px 0px 1px #f8b700;
-  line-height: 1.5;
-  background-color: #170e09;
-  border: 1px solid #504137;
-  text-align: center;
-  font-size: 19.4px;
-  padding: 20px 0px; }
-
-/* Contenedor de la imagen secundaria */
-.image_main-2 {
-  position: relative;
-  width: 49%; }
-
-/* Contenido de la segunda imagen de la pagina*/
-.image_main-2 p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #f8b700;
-  font-family: 'SemplicitaPro-MedIt';
-  font-weight: bolder;
-  text-shadow: 0px 0px 1px #f8b700;
-  line-height: 1.5;
-  background-color: #170e09;
-  border: 1px solid #504137;
-  text-align: center;
-  font-size: 19.4px;
-  margin: 0;
-  width: 100%;
-  padding: 34.7px 0px; }
-
-/* Imagen 1 */
-.kalima-image {
-  border: 1px solid #504137;
-  transition: all .2s;
-  cursor: pointer;
-  user-select: none;
-  width: 100%;
-  height: 590px; }
-
-/* Imagen 1-Efecto */
-.kalima-image:hover {
-  outline: 1px solid #f8b700; }
-
-/* Imagen 2 */
-.kalima-image-2 {
-  border: 1px solid #504137;
-  transition: all .2s;
-  cursor: pointer;
-  user-select: none;
-  border: 1px solid #504137;
-  width: 100%;
-  height: 590px; }
-
-/* Imagen 2-Efecto */
-.kalima-image-2:hover {
-  outline: 1px solid #f8b700; }
-
 .article {
   grid-area: ARTICLE; }
-
-/* Tabla-Bordes */
-.table-style {
-  border-collapse: collapse; }
-
-/* Titulo de la Tabla */
-.title_table {
-  color: #00aeff;
-  font-family: 'Bellefair', serif;
-  text-transform: uppercase;
-  font-weight: bolder;
-  font-size: 35px;
-  margin-left: 10px;
-  position: relative;
-  top: 40px; }
-
-/* Fonts, Border, Altura, Anchura */
-table {
-  border: 1px solid #201f1f;
-  width: 100%;
-  height: 250px;
-  margin-top: 50px;
-  margin-bottom: 400px;
-  font-family: 'Arial Narrow'; }
-
-/* Items de la tabla*/
-.color_items {
-  color: #00358b; }
-
-/* Descripción de la tabla*/
-.color_descripcion {
-  color: #3a3a3a; }
-
-/* Cabecero de la tabla */
-table th {
-  padding: 15px;
-  background: #6a322f;
-  color: #d1e9f3;
-  text-align: center; }
-
-/* Contenido de la tabla */
-table tr td {
-  color: #010101;
-  letter-spacing: 0.08em;
-  line-height: 1.6;
-  text-align: left; }
-
-/* Background Posición-Impar */
-table tr:nth-child(odd) {
-  background-color: #f2cda5; }
-
-/* Background Posición-Par */
-table tr:nth-child(even) {
-  background-color: #e7ad70; }
-
-/* Centrar algunos elementos de la tabla */
-.center {
-  text-align: center; }
-
-.footer {
-  grid-area: FOOTER;
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-
-/* Contacto Email */
-.contacto {
-  text-decoration: none;
-  color: #fff;
-  background-color: #150c09;
-  font-size: 17px;
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  font-family: Helvetica,Arial,sans-serif;
-  transition: all .2s; }
-
-/* Contacto Email-Efecto */
-.contacto:hover {
-  text-shadow: 0px 0px 5px;
-  text-decoration: underline; }
-
-/* Redes Sociales */
-.footer_redes {
-  text-transform: uppercase;
-  font-family: 'SemplicitaPro-MedIt';
-  font-weight: bolder;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  margin: 0px;
-  padding: 20px;
-  background-color: #1e1714;
-  border: 1px solid #312a27; }
-
-/* Copyright */
-.copy_footer {
-  color: rgba(255, 255, 255, 0.7);
-  display: block;
-  font-size: 13px;
-  text-align: center;
-  background-color: #150c09;
-  padding: 20px;
-  width: 100%;
-  font-family: Helvetica,Arial,sans-serif; }
 
 /* SECCION INICIAR SECION */
 /* Contenedor de la seccion iniciar sesión */
@@ -475,17 +479,6 @@ table tr:nth-child(even) {
   width: 30%;
   border: 1px solid black;
   height: 30px; }
-
-/* Titulo de la seccion crear cuenta titulo (h3) */
-.title_create_account h3 {
-  color: #efd1a4;
-  font-size: 22px;
-  text-align: left;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-  margin: 0;
-  padding: 5px;
-  margin-bottom: 20px;
-  background-image: url(https://static.tibia.com/images/global/content/title-background-green.gif); }
 
 /* Contenedor de la seccion crear cuenta opcion (sexo) */
 .container_sex div {
@@ -590,17 +583,6 @@ table tr:nth-child(even) {
   text-shadow: 0 0 5px black,  0 0 5px black;
   transition: color .2s; }
 
-/* Titulo de personajes */
-.title_personaje {
-  color: #00aeff;
-  font-size: 45px;
-  text-transform: uppercase;
-  font-family: 'Friz Quadrata';
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-shadow: 0px 0px 5px;
-  margin: 50px; }
-
 /* SECCION MAPAS */
 /* video Contenedor */
 .container_video {
@@ -642,64 +624,6 @@ table tr:nth-child(even) {
     font-size: 60px;
     left: 7%;
 } */
-.druid {
-  position: relative; }
-
-.druid h3 {
-  position: absolute;
-  top: 15%;
-  left: 20%;
-  font-size: 60px;
-  color: white;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-family: 'Friz Quadrata';
-  text-shadow: 0 0 5px black;
-  transform: translate(-50%, -50%); }
-
-.sorcerer {
-  position: relative; }
-
-.sorcerer h3 {
-  position: absolute;
-  top: 15%;
-  left: 73%;
-  font-size: 60px;
-  color: white;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-family: 'Friz Quadrata';
-  text-shadow: 0 0 5px black;
-  transform: translate(-50%, -50%); }
-
-.paladin {
-  position: relative; }
-
-.paladin h3 {
-  position: absolute;
-  bottom: 10%;
-  right: 61%;
-  font-size: 60px;
-  color: white;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-family: 'Friz Quadrata';
-  text-shadow: 0 0 5px black; }
-
-.knight {
-  position: relative; }
-
-.knight h3 {
-  position: absolute;
-  bottom: 10%;
-  left: 65%;
-  font-size: 60px;
-  color: white;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-family: 'Friz Quadrata';
-  text-shadow: 0 0 5px black; }
-
 .alert-primary {
   width: 15%;
   text-align: center;
@@ -714,15 +638,6 @@ table tr:nth-child(even) {
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 300px; }
-
-/* Contenedor de monsters titulo h4 */
-.container_monsters h4 {
-  text-align: center;
-  font-size: 50px;
-  font-family: 'Friz Quadrata';
-  color: white;
-  text-shadow: 0 0 5px;
-  text-decoration: underline #ecec18; }
 
 /* Contenedor de monsters (iframe) */
 .container_monsters iframe {
