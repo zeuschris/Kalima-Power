@@ -300,12 +300,23 @@
 }
 /* SECCION OUTFITS */
 
+@mixin flex-around{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@mixin flex-center{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* Outfits Contenedor */
 .container_outfits{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-center;
     margin-bottom: 300px;
 }
 
@@ -321,19 +332,6 @@
     border: 3px solid #f8b700;
 }
 
-/* Letras (Druid) de la seccion de personajes */
-/* .d{
-    color:white;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Friz Quadrata';
-    text-shadow: 0 0 5px black;
-    position: absolute;
-    font-size: 60px;
-    left: 7%;
-} */
-
-
 
 .alert-primary{
     width: 15%;
@@ -346,10 +344,7 @@
 
 /* Contenedor de monsters */
 .container_monsters{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex-around;
     margin-bottom: 300px;
 }
 

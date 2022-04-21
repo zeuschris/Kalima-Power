@@ -137,7 +137,6 @@ ion-icon {
     .container_foto .kalima-image:hover {
       outline: 1px solid #f8b700; }
 
-/* Fonts, Border, Altura, Anchura */
 table {
   border: 1px solid #201f1f;
   width: 100%;
@@ -181,8 +180,8 @@ table {
 .background_account {
   background: url(../imagenes/background/Background_Account.jpg) no-repeat fixed;
   background-size: cover;
-  height: 1100px;
-  position: relative; }
+  position: relative;
+  height: 1100px; }
 
 /* Fondo de la seccion personajes */
 .background_personajes {
@@ -194,22 +193,22 @@ table {
 .background_mapas {
   background: url(../imagenes/background/background_mapas.jpg) no-repeat fixed;
   background-size: cover;
-  background-position-y: 50px;
-  position: relative; }
+  position: relative;
+  background-position-y: 50px; }
 
 /* Fondo de la seccion monsters */
 .background_monsters {
   background: url(https://bomdiatibia.com/download/fundo-summer.jpg) no-repeat fixed;
   background-size: cover;
-  background-position-y: 53px;
-  position: relative; }
+  position: relative;
+  background-position-y: 53px; }
 
 /* Fondo de la seccion outfits */
 .background_outfits {
   background: url(../imagenes/background/background_outfits.jpg) no-repeat fixed;
   background-size: cover;
-  background-position-y: 40px;
-  position: relative; }
+  position: relative;
+  background-position-y: 40px; }
 
 /* Fondo de la seccion iniciar sesión */
 .background_login {
@@ -282,59 +281,39 @@ table {
   text-shadow: 0px 0px 5px;
   margin: 50px; }
 
+.letters, .druid h3, .sorcerer h3, .paladin h3, .knight h3 {
+  position: absolute;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: 'Friz Quadrata';
+  text-shadow: 0 0 5px black;
+  transform: translate(-50%, -50%); }
+
 .druid {
   position: relative; }
   .druid h3 {
-    position: absolute;
     top: 15%;
-    left: 20%;
-    font-size: 60px;
-    color: #fff;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Friz Quadrata';
-    text-shadow: 0 0 5px black;
-    transform: translate(-50%, -50%); }
+    left: 20%; }
 
 .sorcerer {
   position: relative; }
   .sorcerer h3 {
-    position: absolute;
     top: 15%;
-    left: 73%;
-    font-size: 60px;
-    color: #fff;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Friz Quadrata';
-    text-shadow: 0 0 5px black;
-    transform: translate(-50%, -50%); }
+    left: 73%; }
 
 .paladin {
   position: relative; }
   .paladin h3 {
-    position: absolute;
-    bottom: 10%;
-    right: 61%;
-    font-size: 60px;
-    color: #fff;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Friz Quadrata';
-    text-shadow: 0 0 5px black; }
+    bottom: 5%;
+    right: 45%; }
 
 .knight {
   position: relative; }
   .knight h3 {
-    position: absolute;
-    bottom: 10%;
-    left: 65%;
-    font-size: 60px;
-    color: #fff;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Friz Quadrata';
-    text-shadow: 0 0 5px black; }
+    bottom: 5%;
+    left: 75%; }
 
 /* Contenedor de monsters titulo h4 */
 .container_monsters h4 {
@@ -598,8 +577,8 @@ h2, h3, h4, h5, h6 {
 /* Outfits Contenedor */
 .container_outfits {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 300px; }
 
@@ -613,17 +592,6 @@ h2, h3, h4, h5, h6 {
 .container_outfits img:hover {
   border: 3px solid #f8b700; }
 
-/* Letras (Druid) de la seccion de personajes */
-/* .d{
-    color:white;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Friz Quadrata';
-    text-shadow: 0 0 5px black;
-    position: absolute;
-    font-size: 60px;
-    left: 7%;
-} */
 .alert-primary {
   width: 15%;
   text-align: center;

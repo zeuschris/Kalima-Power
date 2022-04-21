@@ -70,19 +70,24 @@
     margin: 50px;
 }
 
+
+.letters {
+    position: absolute;
+    font-size: 60px;
+    color:$secondary-color;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Friz Quadrata';
+    text-shadow: 0 0 5px black;
+    transform: translate(-50%, -50%);
+}
+
 .druid{
     position:relative;
     h3{
-        position: absolute;
+        @extend .letters;
         top: 15%;
         left: 20%;
-        font-size: 60px;
-        color:$secondary-color;
-        font-weight: bolder;
-        text-transform: uppercase;
-        font-family: 'Friz Quadrata';
-        text-shadow: 0 0 5px black;
-        transform: translate(-50%, -50%);
     }
 }
 
@@ -90,16 +95,9 @@
 .sorcerer{
     position:relative;
     h3{
-        position: absolute;
+        @extend .letters;
         top: 15%;
         left: 73%;
-        font-size: 60px;
-        color:$secondary-color;
-        font-weight: bolder;
-        text-transform: uppercase;
-        font-family: 'Friz Quadrata';
-        text-shadow: 0 0 5px black;
-        transform: translate(-50%, -50%); 
     }
 }
 
@@ -107,30 +105,18 @@
 .paladin{
     position:relative;
     h3{
-        position: absolute;
-        bottom: 10%;
-        right: 61%;
-        font-size: 60px;
-        color:$secondary-color;
-        font-weight: bolder;
-        text-transform: uppercase;
-        font-family: 'Friz Quadrata';
-        text-shadow: 0 0 5px black;
-    }
+        @extend .letters;
+        bottom: 5%;
+        right: 45%;
+    }   
 }
 
 .knight{
     position:relative;
     h3{
-        position: absolute;
-        bottom: 10%;
-        left: 65%;
-        font-size: 60px;
-        color:$secondary-color;
-        font-weight: bolder;
-        text-transform: uppercase;
-        font-family: 'Friz Quadrata';
-        text-shadow: 0 0 5px black;
+        @extend .letters;
+        bottom: 5%;
+        left: 75%;
     }
 }
 
