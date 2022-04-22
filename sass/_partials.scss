@@ -40,7 +40,7 @@
             font-weight: bolder;
             bottom: -1px;
         }
-}
+} 
 
 
 // Footer
@@ -90,18 +90,34 @@
         width: 100%;
         font-family:Helvetica,Arial,sans-serif;
     }
-}
+} 
+
+// Map
+
+$colors:(color1:$primary-color,color2:$secondary-color);
+
+// @each $color,$values in $colors{
+//     .test-#{$color}{
+//         color :$values;
+//     }
+//     .test-#{$color}{
+//         color :$values;
+//     }
+//     .test-#{$color}{
+//         color :$values;
+//     }
+// }
 
 /* Ionicons */
 
     ion-icon{
         font-size: $ioni-size;
-        color:$primary-color;
+        color: map-get($colors,color1); 
         position: relative;
         left: 20px;
         margin:10px;
         &:hover{
-            color:$secondary-color;
+            color:map-get($colors,color2);
         }
 }
 
