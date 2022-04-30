@@ -42,6 +42,17 @@
         }
 } 
 
+// Video
+
+.video_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    visibility: visible;
+}
 
 // Footer
 
@@ -201,3 +212,24 @@ table{
         text-align: center;
     }    
 }
+
+// Scrollbar
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #717171;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #313030;
+  }

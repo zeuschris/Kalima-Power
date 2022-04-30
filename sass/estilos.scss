@@ -391,6 +391,9 @@
     .background_main{
         background:#1a100d;
     }
+    .video_bg{
+        display:none;
+    }
     .grid-container{
         display:grid;
         grid-template-areas: 'HEADER'
@@ -738,6 +741,9 @@
         position: relative;
     }
 }
+.video_bg{
+    display:none;
+}
 
 @media (min-width: 1025px){
     .grid-container{
@@ -749,6 +755,12 @@
                              'FOOTER';
         
     }    
+
+    .video_bg{
+        display:block;
+        min-width:1600px;
+    }
+   
     .header{
         grid-area: HEADER;
         width: 100%;
@@ -989,7 +1001,7 @@ a.account-login{
 	transition: all ease 0.5s;
 	background:#10adb8;
 }
- 
+
 a.account-login:after,
 a.account-login:before{
 	width: 80px;
